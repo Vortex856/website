@@ -4,10 +4,11 @@
   padding: 0;
 }
 
-body, html {
+body,
+html {
   font-family: 'Quicksand', sans-serif;
-  background-color: #0c0c1e;
-  color: #f0f8ff;
+  background-color: rgb(12, 12, 30);
+  color: rgb(255, 255, 255);
   overflow-x: hidden;
   letter-spacing: 0.5px;
 }
@@ -19,7 +20,7 @@ body, html {
   justify-content: center;
   align-items: center;
   perspective: 1000px;
-  background: radial-gradient(ellipse at bottom, rgba(12,12,30,1) 0%, rgba(12,12,30,0.9) 100%);
+  background: radial-gradient(ellipse at bottom, rgba(12, 12, 30, 1) 0%, rgba(12, 12, 30, 0.9) 100%);
   padding: 20px;
 }
 
@@ -29,37 +30,38 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: 
-    repeating-radial-gradient(
-      circle at center,
+  background:
+    repeating-radial-gradient(circle at center,
       transparent 0,
-      #0c0c1e 50%
-    ), 
-    repeating-linear-gradient(
-      45deg,
-      rgba(255,255,255,0.05) 0,
-      rgba(255,255,255,0.1) 2%,
-      transparent 4%
-    );
+      rgb(12, 12, 30) 50%),
+    repeating-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.1) 2%,
+      transparent 4%);
   z-index: 1;
   animation: starTwinkle 3s infinite alternate;
   opacity: 0.7;
 }
 
 @keyframes starTwinkle {
-  0% { opacity: 0.5; }
-  100% { opacity: 0.9; }
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.9;
+  }
 }
 
 .profileCard {
-  background: linear-gradient(145deg, rgba(106,90,205,0.3), rgba(65,105,225,0.3));
-  border: 2px solid #6a5acd;
+  background: linear-gradient(145deg, rgba(106, 90, 205, 0.3), rgba(65, 105, 225, 0.3));
+  border: 2px solid rgb(106, 90, 205);
   border-radius: 30px;
   padding: 40px;
   text-align: center;
   max-width: 500px;
   width: 90%;
-  box-shadow: 0 15px 50px rgba(106,90,205,0.4);
+  box-shadow: 0 15px 50px rgba(106, 90, 205, 0.4);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -86,30 +88,37 @@ body, html {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid #4169e1;
+  border: 3px solid rgb(65, 105, 225);
   animation: orbitRing 4s linear infinite;
   opacity: 0.7;
 }
 
 @keyframes orbitRing {
-  0% { transform: rotate(0deg) scale(1); }
-  50% { transform: rotate(180deg) scale(1.1); }
-  100% { transform: rotate(360deg) scale(1); }
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
 }
 
 .profileAvatar {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 3px solid #f0f8ff;
   object-fit: cover;
   z-index: 1;
-  box-shadow: 0 0 20px rgba(65,105,225,0.3);
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.4));
 }
 
 .username {
   font-size: 2rem;
-  color: #f0f8ff;
+  color: rgb(255, 255, 255);
   margin-bottom: 10px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -121,7 +130,7 @@ body, html {
 }
 
 .bio {
-  color: #5b7bdc;
+  color: rgb(91, 123, 220);
   font-style: italic;
   margin-bottom: 20px;
   font-weight: 300;
@@ -135,9 +144,10 @@ body, html {
   width: 100%;
 }
 
-.projectsBtn, .backBtn {
-  background-color: #4169e1;
-  color: #f0f8ff;
+.projectsBtn,
+.backBtn {
+  background-color: rgb(65, 105, 225);
+  color: rgb(255, 255, 255);
   border: none;
   padding: 12px 24px;
   border-radius: 25px;
@@ -150,18 +160,19 @@ body, html {
   font-weight: 600;
   letter-spacing: 1px;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(65,105,225,0.3);
+  box-shadow: 0 5px 15px rgba(65, 105, 225, 0.3);
 }
 
-.projectsBtn:hover, .backBtn:hover {
-  background-color: #5278e1;
+.projectsBtn:hover,
+.backBtn:hover {
+  background-color: rgb(82, 120, 225);
   transform: translateY(-3px);
-  box-shadow: 0 7px 20px rgba(65,105,225,0.4);
+  box-shadow: 0 7px 20px rgba(65, 105, 225, 0.4);
 }
 
 .projectsContainer {
-  background: linear-gradient(145deg, rgba(106,90,205,0.3), rgba(65,105,225,0.3));
-  border: 2px solid #6a5acd;
+  background: linear-gradient(145deg, rgba(106, 90, 205, 0.3), rgba(65, 105, 225, 0.3));
+  border: 2px solid rgb(106, 90, 205);
   border-radius: 30px;
   max-width: 500px;
   width: 90%;
@@ -173,7 +184,7 @@ body, html {
   display: none;
   z-index: 10;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(106,90,205,0.4);
+  box-shadow: 0 20px 60px rgba(106, 90, 205, 0.4);
 }
 
 .projectsListWrapper {
@@ -187,12 +198,12 @@ body, html {
 }
 
 .projectsListWrapper::-webkit-scrollbar-track {
-  background: rgba(106,90,205,0.1);
+  background: rgba(106, 90, 205, 0.1);
   border-radius: 10px;
 }
 
 .projectsListWrapper::-webkit-scrollbar-thumb {
-  background: #4169e1;
+  background: rgb(65, 105, 225);
   border-radius: 10px;
 }
 
@@ -205,8 +216,8 @@ body, html {
 }
 
 .projectsList li {
-  background: rgba(106,90,205,0.2);
-  border: 1px solid #4169e1;
+  background: rgba(106, 90, 205, 0.2);
+  border: 1px solid rgb(65, 105, 225);
   border-radius: 15px;
   padding: 15px;
   margin-bottom: 15px;
@@ -216,19 +227,19 @@ body, html {
 
 .projectsList li:hover {
   transform: scale(1.03);
-  background: rgba(106,90,205,0.3);
+  background: rgba(106, 90, 205, 0.3);
 }
 
 .projectsList .projectTitle {
   margin: 0 0 10px 0;
   font-weight: 600;
-  color: #f0f8ff;
+  color: rgb(255, 255, 255);
   font-size: 1.1rem;
 }
 
 .projectsList .projectDescription {
   margin: 0;
-  color: #4169e1;
+  color: rgb(65, 105, 225);
   font-size: 0.9rem;
 }
 
@@ -241,13 +252,13 @@ body, html {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(transparent, #0c0c1e 50%);
+  background: linear-gradient(transparent, rgb(12, 12, 30) 50%);
   z-index: 11;
   pointer-events: none;
 }
 
 .backBtn {
-  background-color: #4169e1;
+  background-color: rgb(65, 105, 225);
   width: 90%;
   max-width: 300px;
   pointer-events: auto;
@@ -258,7 +269,8 @@ body, html {
     padding: 10px;
   }
 
-  .profileCard, .projectsContainer {
+  .profileCard,
+  .projectsContainer {
     width: 95%;
     border-radius: 20px;
     padding: 20px;
@@ -282,7 +294,8 @@ body, html {
     font-size: 0.9rem;
   }
 
-  .projectsBtn, .backBtn {
+  .projectsBtn,
+  .backBtn {
     max-width: 250px;
     padding: 10px 20px;
   }
