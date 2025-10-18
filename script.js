@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const projects = [
     {
       title: 'Nothing here yet.',
-      description: 'Maybe one day i will get my lazy ass to code something.',
+      description: 'Maybe one day i will get my lazy self to code something.',
       link: '/'
     }
   ];
