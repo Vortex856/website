@@ -131,9 +131,8 @@ html {
 
 .bio {
   color: rgb(91, 123, 220);
-  font-style: italic;
   margin-bottom: 20px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .projectSection {
