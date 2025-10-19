@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       li.innerHTML = `
         <h3 class="projectTitle">${project.title}</h3>
         <p class="projectDescription">${project.description}</p>
-      `;  
+      `;
       li.addEventListener('click', () => {
         window.location.href = project.link;
       });
